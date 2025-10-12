@@ -2,8 +2,8 @@ namespace Module2Review;
 
 public class Student
 {
-    string Name { get; set; }
-    int Id { get; set; }
+   public string Name { get; set; }
+    public int Id { get; set; }
     public List<double>Grades { get; set; }
 
     public void AddGrade(double grade)
@@ -23,6 +23,17 @@ public class Student
             return 0;
         }
         return Grades.Average();    
+    }
+
+    public Student()
+    {
+        
+    }
+
+    public Student(string name, int id)
+    {
+        Name = name;
+        Id = id;
     }
     
     
