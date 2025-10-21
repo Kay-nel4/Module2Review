@@ -48,13 +48,27 @@ beanie.AddGrade(94);
 beanie.AddGrade(94, 93, 97.5, 92);
 students.Add(beanie);
 
+int nameLength = 0;
 
-Console.WriteLine("Id  Name     Grades");
 foreach (var student in students)
 {
+    if (student.Name.Length > nameLength)
+    {
+        nameLength = student.Name.Length;
+    }
     
     Console.WriteLine($"{student.Id} {student.Name}  {string.Join(", ", student.Grades)}");
 }
+
+/*int columnWidth = nameLength + 5;
+Console.WriteLine($"Id  {"Name", -columnWidth} Grades");
+Console.WriteLine(new string('-', columnWidth + 5));
+
+for (int i = 0; i < students.Count; i++)
+{
+    Console.WriteLine($"{student.Id[i] student.Name  {string.Join(", ", student.Grades)}");
+}*/
+
 
 
 
