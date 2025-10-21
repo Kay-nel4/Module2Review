@@ -12,3 +12,4 @@ C:\Users\kayne\Desktop\repos\Module2Review\Module2Review\obj\Debug\net9.0\refint
 C:\Users\kayne\Desktop\repos\Module2Review\Module2Review\obj\Debug\net9.0\Module2Review.pdb
 C:\Users\kayne\Desktop\repos\Module2Review\Module2Review\obj\Debug\net9.0\Module2Review.genruntimeconfig.cache
 C:\Users\kayne\Desktop\repos\Module2Review\Module2Review\obj\Debug\net9.0\ref\Module2Review.dll
+C:\Users\kayne\Desktop\repos\Module2Review\Module2Review\obj\Debug\net9.0\Module2Review.sourcelink.json
