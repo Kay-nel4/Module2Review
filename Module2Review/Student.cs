@@ -1,6 +1,6 @@
 namespace Module2Review;
 
-public class Student
+public class Student: Course 
 {
    public string Name { get; set; }
     public int Id { get; set; }

@@ -5,15 +5,22 @@ using Module2Review;
 
 var students = new List<Student>();
 
+var coding = new Course();
+coding.CourseName = "Coding";
+coding.CourseCode = "4044";
+
+
 
 
 
 var sammee = new Student();
 sammee.Name = "Sammee";
 sammee.Id = 1;
+sammee.CourseCode = "4044";
 sammee.AddGrade(99.4);
 sammee.AddGrade(99.4, 94, 97, 98.5);
 students.Add(sammee);
+
 
 
 var buzz = new Student()
@@ -44,6 +51,7 @@ students.Add(roobee);
 var beanie = new Student();
 beanie.Name = "Beanie";
 beanie.Id = 5;
+beanie.CourseCode = "4044";
 beanie.AddGrade(94);
 beanie.AddGrade(94, 93, 97.5, 92);
 students.Add(beanie);
@@ -60,6 +68,19 @@ foreach (var student in students)
     Console.WriteLine($"{student.Id} {student.Name}  {string.Join(", ", student.Grades)}");
 }
 
+Console.WriteLine("> > > > > > > > > >");
+Console.Write("Enrolling Students:");
+for (int i = 0; i < 10; i++)
+{
+    Console.Write("> ");
+    Thread.Sleep(400);
+}
+Console.WriteLine(" ");
+coding.EnrollStudent(sammee);
+coding.EnrollStudent(beanie);
+
+
+
 /*int columnWidth = nameLength + 5;
 Console.WriteLine($"Id  {"Name", -columnWidth} Grades");
 Console.WriteLine(new string('-', columnWidth + 5));
@@ -68,6 +89,7 @@ for (int i = 0; i < students.Count; i++)
 {
     Console.WriteLine($"{student.Id[i] student.Name  {string.Join(", ", student.Grades)}");
 }*/
+
 
 
 
