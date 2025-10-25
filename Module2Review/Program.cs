@@ -89,6 +89,7 @@ for (int i = 0; i < students.Count; i++)
 {
     Console.WriteLine($"{student.Id[i] student.Name  {string.Join(", ", student.Grades)}");
 }*/
+//Will revisit this and create a better method for enrolling students.
 
 
 
